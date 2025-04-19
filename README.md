@@ -17,7 +17,7 @@
 		os.Getenv("host"),
 		UsePrefix("/local/"),
 		UseDuration(120),
-		UseCallback(""),
+		UseCallback("https://www.iosoon.cn/api/any"),
 	)
 	var conf = proxy.Signature("/var/www/")
 
