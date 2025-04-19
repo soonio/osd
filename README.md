@@ -21,9 +21,6 @@
 	)
 	var conf = proxy.Signature("/var/www/")
 
-	bs, err := jsoniter.MarshalIndent(conf, "", "  ")
-	fmt.Println(string(bs), err)
-
 	url := conf.Host
 	method := "POST"
 
