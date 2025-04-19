@@ -10,13 +10,11 @@
 ## 获取上传配置并上传
   ```go
 	var filename = "zhuye.png"
-
-	
 	
 	var proxy = New(
-    os.Getenv("key"),
-    os.Getenv("secret"),
-    os.Getenv("host"),
+		os.Getenv("key"),
+		os.Getenv("secret"),
+		os.Getenv("host"),
 		UsePrefix("/local/"),
 		UseDuration(120),
 		UseCallback(""),
